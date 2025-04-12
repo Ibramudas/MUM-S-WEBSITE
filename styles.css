@@ -1,0 +1,401 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #23527c;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  color: #fff;
+  text-shadow: 0 0 10px #337ab7;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-link {
+    color: #fff;
+    transition: color 0.5s ease;
+    text-shadow: 0 0 10px #337ab7;
+  }
+  
+  .nav-link:hover {
+    color: #ccc;
+  }
+  
+  /* Hero Section Styles */
+  
+  .hero {
+    background-image: linear-gradient(to bottom, #337ab7, #23527c);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .hero-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .hero-subheading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .hero-cta {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .hero-cta:hover {
+    background-color: #23527c;
+  }
+  
+  /* Main Section Styles */
+  
+  .main {
+    background-color: #f9f9f9;
+    padding: 2rem;
+  }
+  
+  .main-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .course-card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .course-cta {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .course-cta:hover {
+    background-color: #23527c;
+  }
+  
+  /* Body Section Styles */
+  
+  .body {
+    background-color: #f9f9f9;
+    padding: 2rem;
+  }
+  
+  .body-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .reason-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .reason-card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reason-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reason-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer Styles */
+  
+  .footer {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer .col-md-4 {
+    flex-basis: 33.33%;
+    padding: 1rem;
+  }
+  
+  .footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ccc;
+  }
+  
+  .social-media-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .social-media-links  a {
+    font-size: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #23527c;
+  }
+    
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .nav-item {
+    margin-bottom: 0.2rem;
+  }
+  .hero {
+    height: 50vh;
+  }
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  .main {
+    padding: 1rem;
+  }
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .body {
+    padding: 1rem;
+  }
+  .reason-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 0.2rem;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .nav-item {
+    margin-bottom: 0.1rem;
+  }
+  .hero {
+    height: 30vh;
+  }
+  .hero-heading {
+    font-size: 2rem;
+  }
+  .main {
+    padding: 0.5rem;
+  }
+  .course-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .body {
+    padding: 0.5rem;
+  }
+  .reason-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+.reason-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Final Styles */
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+footer {
+  overflow-x: hidden;
+}
+
+/* Final Media Queries */
+
+@media only screen and (max-width: 320px) {
+  .hero {
+    height: 20vh;
+  }
+  .hero-heading {
+    font-size: 1.5rem;
+  }
+  .main {
+    padding: 0.2rem;
+  }
+  .course-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .body {
+    padding: 0.2rem;
+  }
+  .reason-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+

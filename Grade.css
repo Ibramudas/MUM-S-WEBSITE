@@ -1,0 +1,737 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 200px; /* Added padding */
+    box-sizing: border-box; /* Added box-sizing */
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  
+    
+  
+  .hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+.course-description {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-outline {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.learning-objectives {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-bio {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-packages {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.package {
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.package h3 {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .packages {
+        flex-direction: column;
+    }
+
+    .package {
+        margin: 0.5em;
+        }
+        
+        .package h3 {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        }
+        
+        .package ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+        
+        .package li {
+        margin-bottom: 0.5em;
+        }
+        
+        .packages {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+        
+        /* Responsive design */
+        
+        @media only screen and (max-width: 768px) {
+        .packages {
+        flex-direction: column;
+        }
+        
+        .package {
+        margin: 1em;
+        }
+        }
+        
+        footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        clear: both;
+        }
+        
+        footer p {
+        margin: 0;
+        }
+        
+        /* Social media links */
+        
+        .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        }
+        
+        .social-links li {
+        margin-right: 20px;
+        }
+        
+        .social-links a {
+        color: #fff;
+        text-decoration: none;
+        }
+        
+        .social-links a:hover {
+        color: #ccc;
+        }
+        
+        /* Copyright */
+        
+        .copyright {
+        font-size: 0.8em;
+        color: #666;
+        }
+        
+        .copyright a {
+            color: #666;
+            text-decoration: none;
+            }
+            
+            .copyright a:hover {
+            color: #888;
+            }
+            
+            /* Button styles */
+            
+            .button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+            
+            .button:hover {
+            background-color: #555;
+            }
+            
+            /* Enroll now button */
+            
+            .enroll-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+            
+            .enroll-button:hover {
+            background-color: #3e8e41;
+            }
+            
+            /* Responsive design */
+            
+            @media only screen and (max-width: 480px) {
+            .button {
+            padding: 5px 10px;
+            }
+            
+            .enroll-button {
+            padding: 5px 10px;
+            }
+            }
+            
+            /* Animations */
+            
+            .animate {
+            animation: animate 0.5s ease-in-out;
+            }
+            
+            @keyframes animate {
+            0% {
+            opacity: 0;
+            transform: translateY(50px);
+            }
+            
+            100% {
+            opacity: 1;
+            transform: translateY(0);
+            }
+            }
+        }
+
+/* Animations */
+
+.animate {
+    animation: animate 0.5s ease-in-out;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Scroll to top button */
+  
+  #scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #scroll-to-top:hover {
+    background-color: #555;
+  }
+  
+  /* Media queries */
+  
+  @media only screen and (max-width: 768px) {
+    /* Add styles for smaller screens */
+  }
+  
+ 
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+    /* Add styles for smaller screens */
+    .navbar {
+      flex-direction: column;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+    }
+    
+    .nav-links li {
+      margin-right: 0;
+    }
+    
+    .burger {
+      display: block;
+    }
+    
+    .hero {
+      height: 200px;
+    }
+    
+    .packages {
+      flex-direction: column;
+    }
+    
+    .package {
+      margin: 1em;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Add styles for smaller screens */
+    .button {
+      padding: 5px 10px;
+    }
+    
+    .enroll-button {
+      padding: 5px 10px;
+    }
+    
+    .hero {
+      height: 150px;
+    }
+    
+    .package {
+      margin: 0.5em;
+    }
+  }
+  
+  /* Final styles */
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  a {
+    transition: color 0.2s ease-in-out;
+  }
+  
+
+  button {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive design */
+  
+  @media only screen and (max-width: 768px) {
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 90%;
+    }
+    
+    input[type="submit"] {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 80%;
+    }
+    
+    input[type="submit"] {
+      width: 80%;
+    }
+  }
+  
+  
+input[type="submit"] {
+    width: 80%;
+  }
+  
+  /* Add some space between elements */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the footer */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Style the social media links */
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-links li {
+    margin-right: 20px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #ccc;
+  }
+  
+  /* Add some animations */
+  
+  .animate {
+    animation: animate 0.5s ease-in-out;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Add some space between elements */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the footer */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Style the social media links */
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-links li {
+    margin-right: 20px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #ccc;
+  }
+  
+  /* Add some animations */
+  
+  .animate {
+    animation: animate 0.5s ease-in-out;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Final styles */
+  
+  button {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive design */
+  
+  @media only screen and (max-width: 768px) {
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 90%;
+    }
+    
+    input[type="submit"] {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 80%;
+    }
+    
+    input[type="submit"] {
+      width: 80%;
+    }
+  }
+  /* Responsive design for smaller screens */
+  
+  @media only screen and (max-width: 320px) {
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 70%;
+    }
+    
+    input[type="submit"] {
+      width: 70%;
+    }
+    
+    .hero {
+      height: 150px;
+    }
+    
+    .course-description, .course-outline, .learning-objectives, .instructor-bio, .pricing-packages {
+      padding: 10px;
+    }
+  }
+  
+  /* Final styles */
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  a {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  button {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* End of CSS code */
+  
