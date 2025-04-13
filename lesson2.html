@@ -1,37 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mathematics: Difference of Two Squares</title>
-  <link rel="stylesheet" href="stles.css">
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics: Expansion, Factorisation, and Difference of Two Squares</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
 
-  </style>
+        .navbar {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #0069d9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.2s ease;
+        }
+
+        .navbar a:hover {
+            color: #ccc;
+        }
+  
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ol {
+    list-style: decimal;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+b {
+    font-weight: bold;
+    color: #00698f;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .content {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+
+
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Mathematics: Difference of Two Squares</h1>
-  </header>
-  <main>
-    <section class="section">
-      <h2>Difference of Two Squares</h2>
-      <pre>(a - b)(a + b) = a² + ab - ab - b² = a² - b² Hence, a² - b² = (a + b)(a - b)</pre>
-    </section>
-    <section class="section">
-      <h3>Examples: Factorise the following</h3>
-      <ol start="4">
-        <li>
-          <pre>y² - 4 = (y)² - (2)² = (y - 2)(y + 2)</pre>
-        </li>
-        <li>
-          <pre>36 - 9a² = 6² - (3a)² = (6 - 3a)(6 + 3a)</pre>
-        </li>
-        <li>
-          <pre>Factorise: 5a² - 45 = 5(a² - 9) = 5[(a - 3)(a + 3)]</pre>
-        </li>
-      </ol>
-    </section>
-  </main>
-</body>
-</html>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="A 10.html">Back to Previous Page</a></li>
+                <li><a href="Questio1.html">Questions</a></li>
+                <li><a href="Solutio.html">Solutions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>FACTORISATION OF QUADRATIC EXPRESSIONS</h2>
+        <h4>Quadratic expression is of the form ax² + bx + c</h4>
+        <h4>To factorise a quadratic expression:</h4>
+        <ol>
+            <li>Identify the coefficient of the highest power, multiply it by the constant term.</li>
+            <li>Look for two factors of the value in (a) above that must also add up to give the middle term.</li>
+            <li>This will make the equation become four terms, then group in twos and factorise.</li>
+        </ol>
+        <h3>EXAMPLES</h3>
+        <ol>
+            <li>Factorise a² + 12a - 45
+                <h4><b>Solution:</b></h4>
+                <h4>Multiply the coefficient of a² (which is 1) by the constant term (-45): 1 * -45 = -45</h4>
+                <h4>Look for two factors of -45 that add up to the middle term's coefficient (12).</h4>
+                <h4>+15 x -3 = -45</h4>
+                <h4>+15 + (-3) = +12</h4>
+                <h4>Rewrite the middle term using these factors:</h4>
+                <h4>a² + 15a - 3a - 45</h4>
+                <h4>Group the terms in twos:</h4>
+                <h4>(a² + 15a) - (3a + 45)</h4>
+                <h4>Factor out the common factor from each group:</h4>
+                <h4>a(a + 15) - 3(a + 15)</h4>
+                <h4>Notice that (a + 15) is a common factor. Factor it out:</h4>
+                <h4>(a - 3)(a + 15)</h4>
+            </li>
+            <li>Factorise 3c² + 14c + 16
+                <h4><b>Solution:</b></h4>
+                <h4>Multiply the coefficient of c² (which is 3) by the constant term (16): 3 * 16 = 48</h4>
+                <h4>Look for two factors of 48 that add up to the middle term's coefficient (14).</h4>
+                <h4>+8 x +6 = +48</h4>
+                <h4>+8 + +6 = +14</h4>
+                <h4>Rewrite the middle term using these factors:</h4>
+                <h4>3c² + 8c + 6c + 16</h4>
+                <h4>Group the terms in twos:</h4>
+                
+                Here is the continuation:
+
+                <h4>(3c² + 6c) + (8c + 16)</h4>
+                <h4>Factor out the common factor from each group:</h4>
+                <h4>3c(c + 2) + 8(c + 2)</h4>
+                <h4>Notice that (c + 2) is a common factor. Factor it out:</h4>
+                <h4>(3c + 8)(c + 2)</h4>
+                </li>
+                </ol>
+                <h2>SOLVING QUADRATIC EQUATION</h2>
+                <h3>EXAMPLES</h3>
+                <ol>
+                <li>Solve x² + 17x - 18 = 0
+                <h4><b>Solution:</b></h4>
+                <h4>x² + 18x - 1x - 18 = 0</h4>
+                <h4>(x² + 18x) - (1x + 18) = 0</h4>
+                <h4>x(x + 18) - 1(x + 18) = 0</h4>
+                <h4>(x - 1)(x + 18) = 0</h4>
+                <h4>So, either:</h4>
+                <h4>x - 1 = 0 OR x + 18 = 0</h4>
+                <h4>x = 1 OR x = -18</h4>
+                </li>
+                <li>Solve m² = 11m + 42
+                <h4><b>Solution:</b></h4>
+                <h4>First, rearrange the equation to the standard quadratic form (m² + bm + c = 0):</h4>
+                <h4>m² - 11m - 42 = 0</h4>
+                <h4>Now, factorise the quadratic expression:</h4>
+                <h4>m² - 14m + 3m - 42 = 0</h4>
+                <h4>(m² - 14m) + (3m - 42) = 0</h4>
+                <h4>m(m - 14) + 3(m - 14) = 0</h4>
+                <h4>(m + 3)(m - 14) = 0</h4>
+                <h4>So, either:</h4>
+                <h4>m + 3 = 0 OR m - 14 = 0</h4>
+                <h4>m = -3 OR m = 14</h4>
+                </li>
+                </ol>
+                </div>
+                </body>
+                </html>
