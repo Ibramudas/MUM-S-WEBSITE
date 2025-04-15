@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>More Trigonometry Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        canvas {
+            border: 1px solid #ddd;
+        }
+        .navbar {
+      background-color:#007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.2s ease;
+    }
+    .navbar a:hover {
+      color: #ccc;
+    }
+        /* Responsive design */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="lesson3.html">Back to Previous Page</a></li>
+        </ul>
+      </nav>
+      
+    <h1>Trigonometry Practice Problems</h1>
+    
+    <h2>Solve the Unknown Side</h2>
+    <h3>Problem 1</h3>
+    <p>Given a right-angled triangle with an angle of 67° and the hypotenuse equal to 14. Find the length of the side opposite to the 67° angle (labeled as x).</p>
+    <p><em>Hint: Use the sine function.</em></p>
+    <canvas id="problem1" width="200" height="200"></canvas>
+    <script>
+        var canvas1 = document.getElementById('problem1');
+        var ctx1 = canvas1.getContext('2d');
+        
+        // Draw triangle
+        ctx1.beginPath();
+        ctx1.moveTo(50, 150);
+        ctx1.lineTo(50, 50);
+        ctx1.lineTo(150, 150);
+        ctx1.closePath();
+        ctx1.stroke();
+        
+        // Label sides
+        ctx1.font = '14px Arial';
+        ctx1.fillText('14', 90, 90);
+        ctx1.fillText('x', 40, 100);
+        ctx1.fillText('67°', 120, 160);
+    </script>
+
+    
+    <h3>Problem 2</h3>
+    <p>Given a triangle with angles 90°, 45°, and another angle. The hypotenuse is 20, and one of the legs is labeled as 'h' (the height). Find the value of 'h'.</p>
+    <p><em>Hint: Since it's a 45-45-90 triangle, the legs are equal. You can also use sine or cosine.</em></p>
+    <canvas id="problem2" width="200" height="200"></canvas>
+    <script>
+        var canvas2 = document.getElementById('problem2');
+        var ctx2 = canvas2.getContext('2d');
+        
+        // Draw triangle
+        ctx2.beginPath();
+        ctx2.moveTo(50, 150);
+        ctx2.lineTo(50, 50);
+        ctx2.lineTo(150, 50);
+        ctx2.closePath();
+        ctx2.stroke();
+        
+        // Label sides
+        ctx2.font = '14px Arial';
+        ctx2.fillText('20', 90, 90);
+        ctx2.fillText('h', 40, 100);
+        ctx2.fillText('45°', 120, 60);
+    </script>
+
+    
+    <h3>Problem 3</h3>
+    <p>Given a right-angled triangle with a 30° angle and the adjacent side equal to 14 cm. Find the length of the side opposite to the 30° angle (labeled as x).</p>
+    <p><em>Hint: Use the tangent function.</em></p>
+    <canvas id="problem3" width="200" height="200"></canvas>
+    <script>
+        var canvas3 = document.getElementById('problem3');
+        var ctx3 = canvas3.getContext('2d');
+        
+        // Draw triangle
+        ctx3.beginPath();
+        ctx3.moveTo(50, 150);
+        ctx3.lineTo(50, 50);
+        ctx3.lineTo(120, 150);
+        ctx3.closePath();
+        ctx3.stroke();
+        
+        // Label sides
+        ctx3.font = '14px Arial';
+        ctx3.fillText('14', 70, 160);
+        ctx3.fillText('x', 40, 100);
+        ctx3.fillText('30°', 90, 160);
+    </script>
+
+    <h2>Homework Problems</h2>
+    <!-- Homework problems with solutions -->
+    <h3>Homework Problem 1</h3>
+    <p>Given a right-angled triangle with an angle of 46° and the adjacent side equal to 55. Find the length of the side opposite to the 46° angle (labeled as x).</p>
+    <p><em>Hint: Use the tangent function.</em></p>
+    <canvas id="hw1" width="200" height="200"></canvas>
+    <script>
+        var canvas4 = document.getElementById('hw1');
+        var ctx4 = canvas4.getContext('2d');
+        
+        // Draw triangle
+        ctx4.beginPath();
+        ctx4.moveTo(50, 150);
+        ctx4.lineTo(50, 50);
+        ctx4.lineTo(120, 150);
+        ctx4.closePath();
+        ctx4.stroke();
+        
+        // Label sides
+        ctx4.font = '14px Arial';
+        ctx4.fillText('55', 70, 160);
+        ctx4.fillText('x', 40, 100);
+        ctx4.fillText('46°', 90, 160);
+    </script>
+
+    
+    <h3>Homework Problem 2</h3>
+    <p>Given a triangle with angles 90°, 49°, and another angle. The hypotenuse is 24m. Find the length of the side opposite to the 49° angle (labeled as x).</p>
+    <p><em>Hint: Use the sine function.</em></p>
+    <canvas id="hw2" width="200" height="200"></canvas>
+    <script>
+        var canvas5 = document.getElementById('hw2');
+        var ctx5 = canvas5.getContext('2d');
+        
+        // Draw triangle
+        ctx5.beginPath();
+        ctx5.moveTo(50, 150);
+        ctx5.lineTo(50, 50);
+        ctx5.lineTo(150, 150);
+        ctx5.closePath();
+        ctx5.stroke();
+        
+        // Label sides
+        ctx5.font = '14px Arial';
+        ctx5.fillText('24', 90, 90);
+        ctx5.fillText('x', 40, 100);
+        ctx5.fillText('49°', 120, 160);
+    </script>
+
+    
+    <h3>Homework Problem 3</h3>
+    <p>Given a right-angled triangle with an angle of 71° and the adjacent side equal to 49m. Find the length of the side opposite to the 71° angle (labeled as x).</p>
+    <p><em>Hint: Use the tangent function.</em></p>
+    <canvas id="hw3" width="200" height="200"></canvas>
+    <script>
+        var canvas6 = document.getElementById('hw3');
+        var ctx6 = canvas6.getContext('2d');
+        
+        // Draw triangle
+        ctx6.beginPath();
+        ctx6.moveTo(50, 150);
+        ctx6.lineTo(50, 50);
+        ctx6.lineTo(100, 150);
+        ctx6.closePath();
+        ctx6.stroke();
+        
+        // Label sides
+        ctx6.font = '14px Arial';
+        ctx6.fillText('49', 70, 160);
+        ctx6.fillText('x', 40, 100);
+        ctx6.fillText('71°', 80, 160);
+    </script>
+
+    
+    <h3>Homework Problem 4</h3>
+    <p>Given a right-angled triangle with an angle of 27° and the hypotenuse equal to 50cm. Find the length of the side adjacent to the 27° angle (labeled as x).</p>
+    <p><em>Hint: Use the cosine function.</em></p>
+    <canvas id="hw4" width="200" height="200"></canvas>
+    <script>
+        var canvas7 = document.getElementById('hw4');
+        var ctx7 = canvas7.getContext('2d');
+        
+        // Draw triangle
+        ctx7.beginPath();
+        ctx7.moveTo(50, 150);
+        ctx7.lineTo(50, 50);
+        ctx7.lineTo(150, 150);
+        ctx7.closePath();
+        ctx7.stroke();
+// Label sides
+ctx7.font = '14px Arial';
+ctx7.fillText('50', 90, 90);
+ctx7.fillText('x', 100, 160);
+ctx7.fillText('27°', 120, 160);
+</script>
+
+
+<h3>Homework Problem 5</h3>
+<p>Given a right-angled triangle with an angle of 31° and the opposite side equal to 20. Find the length of the hypotenuse (labeled as x).</p>
+<p><em>Hint: Use the sine function.</em></p>
+<canvas id="hw5" width="200" height="200"></canvas>
+<script>
+    var canvas8 = document.getElementById('hw5');
+    var ctx8 = canvas8.getContext('2d');
+    
+    // Draw triangle
+    ctx8.beginPath();
+    ctx8.moveTo(50, 150);
+    ctx8.lineTo(50, 50);
+    ctx8.lineTo(150, 150);
+    ctx8.closePath();
+    ctx8.stroke();
+    
+    // Label sides
+    ctx8.font = '14px Arial';
+    ctx8.fillText('x', 90, 90);
+    ctx8.fillText('20', 40, 100);
+    ctx8.fillText('31°', 120, 160);
+</script>
+
+</body>
+</html>

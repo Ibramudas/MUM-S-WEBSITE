@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trigonometry Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1, h2 {
+            color: #00698f;
+        }
+        
+        .diagram {
+            width: 100%;
+            height: 200px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        canvas {
+            border: 1px solid #ddd;
+        }
+        
+
+        .navbar {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #0069d9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.2s ease;
+        }
+
+        .navbar a:hover {
+            color: #ccc;
+        }
+        
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .content {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="A 10.html">Back to Previous Page</a></li>
+                <li><a href="Questio3.html">Questions</a></li>
+                <li><a href="Solutio3.html">Solutions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Trigonometry Notes</h1>
+        
+        <h2>Right-Angled Triangle Basics</h2>
+        <h4>In a right-angled triangle, the sides have special names:</h4>
+        <ul>
+            <li><strong>Hypotenuse:</strong> The longest side, opposite the right angle.</li>
+            <li><strong>Opposite:</strong> The side opposite to the angle we are considering (often labeled as θ).</li>
+            <li><strong>Adjacent:</strong> The side next to the angle we are considering (not the hypotenuse).</li>
+        </ul>
+        
+        <h2>Pythagoras Theorem</h2>
+        <h4>This theorem tells us the relationship between the sides of a right-angled triangle:</h4>
+        <h4>(Hypotenuse)<sup>2</sup> = (Opposite)<sup>2</sup> + (Adjacent)<sup>2</sup></h4>
+        
+        <h2>Example Using Pythagoras Theorem</h2>
+        <h4>Consider a right-angled triangle with sides 3 and 4. Let's find the hypotenuse (x).</h4>
+        <canvas id="diagram1" width="200" height="200"></canvas>
+        <script>
+            var canvas = document.getElementById('diagram1');
+            var ctx = canvas.getContext('2d');
+            
+            // Draw triangle
+            ctx.beginPath();
+            ctx.moveTo(50, 150);
+            ctx.lineTo(50, 50);
+            ctx.lineTo(150, 150);
+            ctx.closePath();
+            ctx.stroke();
+            
+            // Label sides
+            ctx.font = '14px Arial';
+            ctx.fillText('3', 40, 100);
+            ctx.fillText('4', 100, 160);
+            ctx.fillText('x', 90, 90);
+        </script>
+        <h4>Using Pythagoras Theorem, we can calculate the length of the hypotenuse:</h4>
+        <h4>x<sup>2</sup> = 3<sup>2</sup> + 4<sup>2</sup></h4>
+        <h4>x<sup>2</sup> = 9 + 16</h4>
+        <h4>x<sup>2</sup> = 25</h4>
+        <h4>x = √25 = 5</h4>
+        
+        <h2>Using Sine, Cosine, and Tangents</h2>
+        <h4>These are special ratios of the sides of a right-angled triangle related to its angles:</h4>
+        <ul>
+            <li><strong>Sine (Sin θ):</strong> Opposite / Hypotenuse</li>
+            <li><strong>Cosine (Cos θ):</strong> Adjacent / Hypotenuse</li>
+            <li><strong>Tangent (Tan θ):</strong> Opposite / Adjacent</li>
+        </ul>
+        
+        <h2>Mnemonics for Trigonometric Ratios</h2>
+        <h4>Remember the acronyms to help with trigonometric ratios:</h4>
+        <ul>
+            <li><strong>SOH:</strong> Sine = Opposite / Hypotenuse</li>
+            <li><strong>CAH:</strong> Cosine = Adjacent / Hypotenuse</li>
+            <li><strong>TOA:</strong> Tangent = Opposite / Adjacent</li>
+        </ul>
+        
+        <h2>Examples</h2>
+<h3>Example 1: Finding x and y</h3>
+<h4>Given a right-angled triangle with a 30° angle, the side opposite is 4, the adjacent side is x, and the hypotenuse is y. Find x and y.</h4>
+<canvas id="diagram2" width="200" height="200"></canvas>
+<script>
+    var canvas2 = document.getElementById('diagram2');
+    var ctx2 = canvas2.getContext('2d');
+    
+    // Draw triangle
+    ctx2.beginPath();
+    ctx2.moveTo(50, 150);
+    ctx2.lineTo(50, 50);
+    ctx2.lineTo(130, 150);
+    ctx2.closePath();
+    ctx2.stroke();
+    
+    // Label sides
+    ctx2.font = '14px Arial';
+    ctx2.fillText('4', 40, 100);
+    ctx2.fillText('x', 90, 160);
+    ctx2.fillText('y', 90, 90);
+</script>
+<h4>To find x, we can use the tangent ratio:</h4>
+<h4>Tan 30° = Opposite / Adjacent = 4 / x</h4>
+<h4>x * Tan 30° = 4</h4>
+<h4>x = 4 / Tan 30°</h4>
+<h4>x ≈ 4 / 0.5774</h4>
+<h4>x ≈ 6.93</h4>
+<h4>To find y, we can use the sine ratio:</h4>
+<h4>Sin 30° = Opposite / Hypotenuse = 4 / y</h4>
+<h4>y * Sin 30° = 4</h4>
+<h4>y = 4 / Sin 30°</h4>
+<h4>y = 4 / 0.5</h4>
+<h4>y = 8</h4>
+<h3>Example 2: Finding x (Triangle B)</h3>
+<h4>Given a right-angled triangle B with a 30° angle and the opposite side equal to 13. Find the hypotenuse (x).</h4>
+<canvas id="diagram3" width="200" height="200"></canvas>
+<script>
+    var canvas3 = document.getElementById('diagram3');
+    var ctx3 = canvas3.getContext('2d');
+    
+    // Draw triangle
+    ctx3.beginPath();
+    ctx3.moveTo(50, 150);
+    ctx3.lineTo(50, 50);
+    ctx3.lineTo(200, 150);
+    ctx3.closePath();
+    ctx3.stroke();
+    
+    // Label sides
+    ctx3.font = '14px Arial';
+    ctx3.fillText('13', 40, 100);
+    ctx3.fillText('x', 120, 90);
+</script>
+<h4><strong>Solution:</strong></h4>
+<h4>Sin 30° = Opposite / Hypotenuse = 13 / x</h4>
+<h4>x * Sin 30° = 13</h4>
+<h4>x = 13 / Sin 30°</h4>
+<h4>x = 13 / 0.5</h4>
+<h4>x = 26</h4>
+
+<h3>Example 3: Finding x (Triangle C)</h3>
+<h4>Given a right-angled triangle C with a 75° angle and the adjacent side equal to 5. Find the opposite side (x).</h4>
+<canvas id="diagram4" width="200" height="200"></canvas>
+<script>
+    var canvas4 = document.getElementById('diagram4');
+    var ctx4 = canvas4.getContext('2d');
+    
+    // Draw triangle
+    ctx4.beginPath();
+    ctx4.moveTo(50, 150);
+    ctx4.lineTo(50, 50);
+    ctx4.lineTo(100, 150);
+    ctx4.closePath();
+    ctx4.stroke();
+    
+    // Label sides
+    ctx4.font = '14px Arial';
+    ctx4.fillText('x', 60, 100);
+    ctx4.fillText('5', 70, 160);
+</script>
+<h4><strong>Solution:</strong></h4>
+<h4>Tan 75° = Opposite / Adjacent = x / 5</h4>
+<h4>x = 5 * Tan 75°</h4>
+<h4>x ≈ 5 * 3.732</h4>
+<h4>x ≈ 18.66</h4>
+</div>
+
+</body>
+</html>
+
